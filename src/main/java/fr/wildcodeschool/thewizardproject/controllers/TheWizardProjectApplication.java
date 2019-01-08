@@ -1,4 +1,4 @@
-package fr.wildcodeschool.thewizardproject;
+package fr.wildcodeschool.thewizardproject.controllers;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
