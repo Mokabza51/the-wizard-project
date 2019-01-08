@@ -2,7 +2,11 @@ package fr.wildcodeschool.thewizardproject.models;
 
 public class Gandalf implements WizardInterface{
 
-	private Outfit myOutfit;
+	private OutfitInterface colorDress;
+	
+	public Gandalf (OutfitInterface theColorDress) {
+		colorDress= theColorDress;
+	}
 
 	@Override
 	public String giveAdvice() {
@@ -10,14 +14,10 @@ public class Gandalf implements WizardInterface{
 		return "You look good, but stay humble my friend! ";
 	}
 
-	public void setMyOutfit(Outfit theOutfit) {
-		this.myOutfit = theOutfit;
-	}
-	
 	@Override
-	public String changeDress() {
+	public String giveColorDress() {
 		// TODO Auto-generated method stub
-		return this.myOutfit.theDressColor();
+		return this.colorDress.changeDress();
 	}
 	
 }

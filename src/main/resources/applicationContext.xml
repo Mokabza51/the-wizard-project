@@ -6,7 +6,11 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-<bean id="theOutfit" class="fr.wildcodeschool.theWizardproject.models.Gandalf">
-    </bean>
+ 	<bean id="Outfit" class="fr.wildcodeschool.thewizardproject.models.OutfitBk">
+   	 </bean>
+
+	 <bean id="theWizard" class="fr.wildcodeschool.thewizardproject.models.Gandalf">
+	<constructor-arg ref="Outfit"/>
+    	</bean>
 
 </beans>
