@@ -8,6 +8,9 @@ public class TheWizardProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TheWizardProjectApplication.class, args);
+		
+		App myApp = new App();
+		myApp.start();
 	}
 
 }
