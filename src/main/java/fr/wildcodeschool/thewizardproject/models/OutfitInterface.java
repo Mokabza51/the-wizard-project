@@ -1,6 +1,6 @@
 package fr.wildcodeschool.thewizardproject.models;
 
-public interface OutfitInterface {
+public abstract interface OutfitInterface {
 	
 	public String changeDress();
 
